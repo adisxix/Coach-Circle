@@ -1,16 +1,98 @@
-# React + Vite
+# Coach Circle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern mentorship platform connecting professionals with industry experts across 10+ fields. Find guidance, book sessions, and accelerate your career growth.
 
-Currently, two official plugins are available:
+![Built with React](https://img.shields.io/badge/React-19-blue) ![Vite](https://img.shields.io/badge/Vite-8-purple) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-cyan)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Find Mentors** - Browse curated mentor profiles across Software, Finance, Design, Marketing, Healthcare, Legal, Education, Entrepreneurship, HR, and Management
+- **Book Sessions** - Schedule one-on-one mentoring sessions at your convenience
+- **Join Communities** - Connect with industry-specific communities to network and learn
+- **User Dashboard** - Track sessions, manage mentors, and update your profile
+- **CC+ Premium** - Enhanced mentoring experience with exclusive features
+- **Responsive Design** - Beautiful UI that works on all devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React 19 + React Router DOM
+- **Build Tool:** Vite 8
+- **Styling:** Tailwind CSS 4
+- **Authentication:** Custom local storage-based auth system
+- **Icons:** Lucide React (optional)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/adisxix/Coach-Circle.git
+
+# Navigate to project directory
+cd Coach-Circle
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/      # Reusable UI components (Navbar, Footer, MentorCard, etc.)
+├── pages/          # Route pages
+│   ├── HomePage.jsx
+│   ├── LoginPage.jsx
+│   ├── JoinPage.jsx
+│   ├── DashboardPage.jsx
+│   ├── CCPlusPage.jsx
+│   └── community/  # Industry community pages
+├── hooks/          # Custom React hooks
+├── utils/          # Utility functions (auth storage)
+├── assets/         # Static assets
+├── App.jsx         # Main app component with routes
+└── main.jsx        # Entry point
+```
+
+## Pages & Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | Landing page with mentor showcase |
+| `/login` | User authentication |
+| `/join` | Sign up as mentee or mentor |
+| `/home2` | Authenticated home (protected) |
+| `/dashboard` | User dashboard with sessions & settings (protected) |
+| `/cc-plus` | Premium subscription page |
+| `/community/:industry` | Industry-specific community pages |
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
